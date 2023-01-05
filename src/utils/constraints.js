@@ -1,4 +1,9 @@
 import discord from "discord.js";
+import * as dotenv from "dotenv";
+dotenv.config();
+
+// ENV
+export const DISCORD_TOKEN = process.env.DISCORD_TOKEN;
 
 // Discord Images
 export const katiauImage = new discord.MessageAttachment(

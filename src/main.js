@@ -1,10 +1,11 @@
+import { DISCORD_TOKEN } from "./utils/constraints.js";
 import { router } from "./app.js";
 import discord from "discord.js";
 
 const bot = new discord.Client();
 
 // Auth
-bot.login("ODIxNTA4MTk1MDkxNzQyNzQw.YFEvIA.BDNZz2zrg0QBkZ9KV8SVALezW_4");
+bot.login(DISCORD_TOKEN);
 
 // Listeners
 bot.on("ready", () => {
