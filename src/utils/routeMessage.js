@@ -8,11 +8,11 @@ class MessageOptions {
   }
 
   getChannel() {
-    return this.message.member.voice.channel;
+    return this.message.member.voice && this.message.member.voice.channel;
   }
 
   getGuildId() {
-    return this.message.channel.guild.id;
+    return this.message.channel && this.message.channel.guild.id;
   }
 
   async playAudio(audio, callback) {
