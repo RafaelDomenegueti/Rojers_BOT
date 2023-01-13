@@ -13,8 +13,12 @@ bot.on("ready", () => {
 });
 
 bot.on("message", async (msg) => {
-  // Receive message
-  await router(msg);
+  try {
+    // Receive message
+    await router(msg);
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 export default bot;
