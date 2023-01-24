@@ -77,6 +77,14 @@ const commandJJ = async (msg) => {
   }
 };
 
+const commandThrowYourself = async (msg) => {
+  if (msg.getChannel()) {
+    await msg.playAudio("./src/assets/audios/seJogar.mp3", () => {
+      msg.leave();
+    });
+  }
+};
+
 export {
   commandAe,
   commandCute,
@@ -85,4 +93,5 @@ export {
   commandKatiau,
   commandSasa,
   commandUga,
+  commandThrowYourself,
 };

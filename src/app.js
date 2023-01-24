@@ -7,6 +7,7 @@ import {
   commandJulho,
   commandKatiau,
   commandSasa,
+  commandThrowYourself,
   commandUga,
 } from "./services/persons.js";
 import {
@@ -37,6 +38,7 @@ export const router = async (msg) => {
   await messageIsEqual(msg, "!sasa", commandSasa);
   await messageIsEqual(msg, "!julho", commandJulho);
   await messageIsEqual(msg, "!JJ", commandJJ);
+  await messageIsEqual(msg, "!se_jogar", commandThrowYourself);
 
   // Audios
   await messageStartWith(msg, "!r.p ", commandRunPlayer);
