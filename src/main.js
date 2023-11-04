@@ -1,5 +1,5 @@
-import 'reflect-metadata';
-import 'express-async-errors';
+import "reflect-metadata";
+import "express-async-errors";
 import { DISCORD_TOKEN } from "./utils/constraints.js";
 import { router } from "./app.js";
 import discord from "discord.js";

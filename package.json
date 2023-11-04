@@ -24,8 +24,10 @@
     "axios": "^1.2.2",
     "discord.js": "^12.5.1",
     "dotenv": "^16.0.3",
+    "express-async-errors": "^3.1.1",
     "ffmpeg-static": "^4.2.8",
     "gtts": "^0.2.1",
+    "reflect-metadata": "^0.1.13",
     "scalc": "^2.0.1",
     "ytdl-core": "^4.11.2"
   }
